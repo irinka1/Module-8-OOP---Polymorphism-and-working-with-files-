@@ -16,13 +16,20 @@ public class main {
 
 
         Flowers[] flowers1 = flowerStore.sellSequence(3,2,3);
-        showFlowers(flowers1);
+        showSequenceFlowers(flowers1);
 
     }
 
     public static void showFlowers(Flowers[] flowers){
         for (int i = 0; i < flowers.length; i++){
             System.out.print(flowers[i].show() + " ");
+        }
+        System.out.println();
+    }
+
+    public static void showSequenceFlowers(Flowers[] flowers1){
+        for (int i = 0; i < flowers1.length; i++){
+            System.out.print(flowers1[i].show() + " ");
         }
         System.out.println();
     }

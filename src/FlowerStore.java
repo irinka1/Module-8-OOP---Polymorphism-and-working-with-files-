@@ -47,7 +47,7 @@ public class FlowerStore extends Flowers{
         Flowers[] flowers1 = new Flowers [numbrose + numbromashka + numbtulpan];
         int j;
         for (int i = 0; i <numbrose + numbromashka + numbtulpan; i += j){
-            j = 0;
+             j = 0;
             if (numbrose > 0) {
                 flowers1[i] = new Roza();
                 numbrose--;
