@@ -12,4 +12,8 @@ public class Roza extends Flowers {
     public String show(){
         return "Роза";
     }
+
+    public double getPrice() {
+        return price;
+    }
 }

@@ -13,8 +13,11 @@ public class FlowerStore extends Flowers{
     private int numbroza;
     private int numbromashka;
     private int numbtulpan;
-    public Roza roza;
-    //private  flowers;
+    int kassa = 0;
+    private Roza rose;
+    private Cham charmomile;
+    private Tulip tulip;
+
 
     public FlowerStore(int numbroza, int numbromashka, int numbtulpan) {
         this.numbroza = numbroza;
@@ -28,16 +31,22 @@ public class FlowerStore extends Flowers{
         Flowers[] flowers = new Flowers [numbrose + numbromashka + numbtulpan];
 
         for (int i = 0; i < numbrose; i++) {
-          flowers[i] = new Roza();
+            rose = new Roza();
+          flowers[i] = rose;
+          kassa+=rose.getPrice();
 
         }
 
         for (int j = numbrose; j < numbrose + numbromashka; j++) {
+            charmomile = new Cham();
             flowers[j] = new Cham();
+            kassa+=charmomile.getPrice();
         }
 
         for (int m = numbrose + numbromashka; m < numbrose + numbromashka + numbtulpan; m++) {
-            flowers[m] = new Tulip();
+            tulip = new Tulip();
+            flowers[m] = tulip;
+            kassa+=tulip.getPrice();
         }
 
         return flowers;
@@ -52,19 +61,26 @@ public class FlowerStore extends Flowers{
                 flowers1[i] = new Roza();
                 numbrose--;
                 j++;
+                kassa+=rose.getPrice();
             }
             if (numbromashka > 0){
                 flowers1[i] = new Cham();
                 numbromashka--;
                 j++;
+                kassa+=charmomile.getPrice();
             }
             if (numbtulpan > 0){
                 flowers1[i] = new Tulip();
                 numbtulpan--;
                 j++;
+                kassa+=tulip.getPrice();
             }
         }
         return flowers1;
+    }
+
+    public double getKassa(){
+        return kassa;
     }
 
 }

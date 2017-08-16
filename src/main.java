@@ -5,6 +5,9 @@ import RosaRomTul.Tulip;
 
 import java.util.Arrays;
 
+import static RosaRomTul.FlowersLoader.load;
+import static RosaRomTul.FlowersSaver.save;
+
 public class main {
 
 
@@ -13,26 +16,32 @@ public class main {
         FlowerStore flowerStore = new FlowerStore(4,2,3);
         Flowers[] flowers = flowerStore.sell(3,5,1);
         showFlowers(flowers);
+        System.out.println("Наличных в кассе: " + flowerStore.getKassa());
 
 
         Flowers[] flowers1 = flowerStore.sellSequence(3,2,3);
-        showSequenceFlowers(flowers1);
+       // showSequenceFlowers(flowers1);
+        save("files/flowers.txt",flowers);
+
+        Flowers[] flowersRead = load("files/flowers.txt");
+        showFlowers(flowersRead);
 
     }
 
     public static void showFlowers(Flowers[] flowers){
         for (int i = 0; i < flowers.length; i++){
-            System.out.print(flowers[i].show() + " ");
+            System.out.print(flowers[i].show() + ", ");
         }
         System.out.println();
     }
 
     public static void showSequenceFlowers(Flowers[] flowers1){
         for (int i = 0; i < flowers1.length; i++){
-            System.out.print(flowers1[i].show() + " ");
+            System.out.print(flowers1[i].show() + ", ");
         }
         System.out.println();
     }
+
 
 
 }
