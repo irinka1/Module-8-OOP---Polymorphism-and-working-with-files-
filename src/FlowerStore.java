@@ -52,7 +52,7 @@ public class FlowerStore extends Flowers{
         return flowers;
     }
 
-    public Flowers[]  sellSequence (int numbrose, int numbromashka, int numbtulpan){
+    public Flowers[]  sellSequence (int numbrose, int numbromashka, int numbtulpan){    //МЕТОД sellSequence
         Flowers[] flowers1 = new Flowers [numbrose + numbromashka + numbtulpan];
         int j;
         for (int i = 0; i <numbrose + numbromashka + numbtulpan; i += j){
