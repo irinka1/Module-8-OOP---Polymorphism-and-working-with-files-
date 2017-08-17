@@ -2,12 +2,15 @@ package RosaRomTul;
 
 public class Flowers {
 
-    public double price = 0;
+    protected double price = 0;
 
     //public Flowers(Roza(), Cham(), Tulip())
 
     public String show(){
-        return "flower";
+        return this.getClass().getSimpleName();
     }
 
+    public double getPrice() {
+        return price;
+    }
 }
