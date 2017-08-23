@@ -52,32 +52,35 @@ public class FlowerStore extends Flowers{
         return flowers;
     }
 
-    public Flowers[]  sellSequence (int numbrose, int numbromashka, int numbtulpan){    //МЕТОД sellSequence
-        Flowers[] flowers1 = new Flowers [numbrose + numbromashka + numbtulpan];
+    public Flowers[]  sellSequence (int numbrose, int numbromashka, int numbtulpan){
+        Flowers[] flowers = new Flowers [numbrose + numbromashka + numbtulpan];
         int j;
         for (int i = 0; i <numbrose + numbromashka + numbtulpan; i += j){
              j = 0;
             if (numbrose > 0) {
-                flowers1[i] = new Roza();
+                flowers[i] = new Roza();
                 numbrose--;
                 j++;
                 kassa+=rose.getPrice();
             }
             if (numbromashka > 0){
-                flowers1[i] = new Cham();
+                flowers[i] = new Cham();
                 numbromashka--;
                 j++;
                 kassa+=charmomile.getPrice();
             }
             if (numbtulpan > 0){
-                flowers1[i] = new Tulip();
+                flowers[i] = new Tulip();
                 numbtulpan--;
                 j++;
                 kassa+=tulip.getPrice();
             }
         }
-        return flowers1;
+        return flowers;
     }
+
+
+
 
     public double getKassa(){
         return kassa;

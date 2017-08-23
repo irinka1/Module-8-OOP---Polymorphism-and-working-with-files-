@@ -2,19 +2,18 @@ package RosaRomTul;
 
 public class Cham extends Flowers {
 
-        private double price = 70;
+      //  private double price = 70;
 
         public Cham(){
-            super.price = this.price;
+
+            super.price = 70;
         }
 
 
     public String show(){
-        return "Ромашка";
+
+            return "Ромашка";
     }
 
-    public double getPrice() {
-        return price;
-    }
 
 }
