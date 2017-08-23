@@ -21,11 +21,14 @@ public class main {
 
 
         Flowers[] flowers1 = flowerStore.sellSequence(3,2,3);
-        showFlowers(flowers1);
+        showSequenceFlowers(flowers1);
+        System.out.println();
+        System.out.println("А теперь наличных в кассе: " + flowerStore.getKassa());
         save("files/flowers.txt",flowers);
 
         Flowers[] flowersRead = load("files/flowers.txt");
         showFlowers(flowersRead);
+        showSequenceFlowers(flowers1);
 
     }
 
