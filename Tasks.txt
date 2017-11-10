@@ -1,0 +1,24 @@
+Exercise 1
+Create a base class for colors. It inherits 3 flower classes:
+    rose flower,
+    chamomile,
+    tulip
+Create a FlowerStore class that sells bouquets of flowers through the sell function. This function takes 3 digits. Number of roses, number of chamomiles, number of tulips. And to return one array of flowers, in which flowers will be stored, should be returned. One object in the array == one flower in the bouquet. The sequence of colors in the bouquet does not matter.
+Add a sellSequence method that works in the same way as the sell method, takes 3 numbers (number of colors), but now the flowers in the bouquet should go alternating: a rose, a daisy, a tulip. If the sequence is not enough flowers, continue to display the same sequence but skipping the flowers that are superfluous.
+For example 5 roses, 3 daisies, 1 tulip:
+rose, chamomile, tulip, rose, chamomile, rose, chamomile, rose, rose
+In the main class of the program, demonstrate the work of the sell and sellSequence
+Output a bouquet in the console through a comma in one line.
+For String name, there are no color classes.
+
+Exercise 2
+Add a price to the color classes. The rose costs 100, chamomile 70, tulip 45.
+Add a purse to the FlowerStore class. Which stores how much money in the store. After the sale of the bouquet - replenish the purse of the store for the amount of colors sold.
+
+Exercise 3
+Write the class FlowersLoader. This class has a static function - load, which takes the path to the file, and returns an array of color objects (a bouquet).
+You must ensure that you can not create an object of this class.
+
+Exercise 4
+Write the class FlowersSaver. This class has a static function - save which takes the path to the file and an array of colors (a bouquet). Must save the flowers to a file.
+You must ensure that you can not create an object of this class.
