@@ -1,6 +1,6 @@
-/*Создать класс FlowerStore который продает букеты цветов через функцию sell. Эта функция принимает 3 числа.
-Кол-во роз, кол-во ромашек, кол-во тюльпанов. А вернуть должна один массив цветов, в котором будут храниться цветы.
-Один объект в массив == один цветок в букете. Последовательность расстановки цветов в букете не имеет значения.
+/*Create a FlowerStore class that sells bouquets of flowers through the sell function. This function takes 3 digits.
+Number of roses, number of chamomiles, number of tulips. And to return one array of flowers, in which flowers will be stored, should be returned.
+One object in the array == one flower in the bouquet. The sequence of colors in the bouquet does not matter.
 */
 
 import RosaRomTul.Cham;
