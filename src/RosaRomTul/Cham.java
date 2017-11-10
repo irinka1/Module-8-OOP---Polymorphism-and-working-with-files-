@@ -12,7 +12,7 @@ public class Cham extends Flowers {
 
     public String show(){
 
-            return "Ромашка";
+            return "Chamomile";
     }
 
 
