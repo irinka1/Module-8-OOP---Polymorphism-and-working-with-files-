@@ -12,7 +12,7 @@ public class Roza extends Flowers {
 
     public String show(){
 
-        return "Роза";
+        return "Rose";
     }
 
 
